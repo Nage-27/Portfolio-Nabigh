@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Nabigh</title>
+    <link rel="shortcut icon" href="" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Bagian Header -->
+    <header>
+      <a href="#" class="logo">Naghe.</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a
+          href="javascript:void(0);"
+          onclick="toogleMenu()"
+          class="hamburger-icon"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+
+      <script>
+        const navlinks = document.querySelector(".nav-links");
+
+        function toogleMenu() {
+          if (navlinks.style.display === "block") {
+            navlinks.style.display = "none";
+          } else {
+            navlinks.style.display = "block";
+          }
+        }
+      </script>
+    </header>
+
+    <!-- Bag hero -->
+     <section>
+        <div>
+            <p>Hello I'am Naghe</p>
+            <h1>An <span>Explorer</span> of new <br>experiences</h1>
+            <p>Someone who wants to become the best version of themselves—not to surpass others,<br> but to learn to know themselves.</p>
+            <button>See More</button>
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
+     </section>
+
+     <!-- Bag About -->
+      <section class="about">
+        <div>
+            <h1>About Me</h1>
+            <p>Tentangku</p>
+            <p>Kenalin n`ama asli & lengkapnya <span>Nabigh Habibie Ghany</span> cuman panggil aja "Naghe", <br> pemuda yang pengen cari jati dirinya, haus akan ilmu dan pengalaman</p>
+        </div>
+      </section>
+  </body>
+</html>
