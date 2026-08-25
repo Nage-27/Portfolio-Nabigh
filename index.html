@@ -5,62 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Nabigh</title>
     <link rel="shortcut icon" href="" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Bagian Header -->
     <header>
-      <a href="#" class="logo">Naghe.</a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <a
-          href="javascript:void(0);"
-          onclick="toogleMenu()"
-          class="hamburger-icon"
-        >
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
+        <a href="#" class="logo">Naghe.</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="javascript:void(0);" onclick="toogleMenu()" class="hamburger-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
 
-      <script>
-        const navlinks = document.querySelector(".nav-links");
+        <script>
+            const navlinks = document.querySelector('.nav-links');
 
-        function toogleMenu() {
-          if (navlinks.style.display === "block") {
-            navlinks.style.display = "none";
-          } else {
-            navlinks.style.display = "block";
-          }
-        }
-      </script>
+            function toogleMenu(){
+                if(navlinks.style.display === 'block') {
+                    navlinks.style.display = 'none';
+                } else{
+                    navlinks.style.display = 'block';
+                }
+            }
+        </script>
     </header>
 
     <!-- Bag hero -->
-     <section>
-        <div>
-            <p>Hello I'am Naghe</p>
-            <h1>An <span>Explorer</span> of new <br>experiences</h1>
-            <p>Someone who wants to become the best version of themselves—not to surpass others,<br> but to learn to know themselves.</p>
-            <button>See More</button>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-     </section>
+    <section>
+      <div>
+        <p>Hello I'am Naghe</p>
+        <h1>An <span>Explorer</span> of new <br />experiences</h1>
+        <p>
+          Someone who wants to become the best version <br>of themselves—not to
+          surpass others,<br />
+          but to learn to know themselves.
+        </p>
+        <button>See More</button>
+      </div>
+      <div>
+        <img src="/gambar/download (18).jpg" alt="" />
+      </div>
+    </section>
 
-     <!-- Bag About -->
-      <section class="about">
-        <div>
-            <h1>About Me</h1>
-            <p>Tentangku</p>
-            <p>Kenalin n`ama asli & lengkapnya <span>Nabigh Habibie Ghany</span> cuman panggil aja "Naghe", <br> pemuda yang pengen cari jati dirinya, haus akan ilmu dan pengalaman</p>
+    <!-- Bag About -->
+    <section class="about">
+      <div>
+        <h1>About Me</h1>
+        <p>Tentangku</p>
+        <p>
+          Kenalin nama asli & lengkapnya <span class="name">Nabigh Habibie Ghany</span> <br>cuman
+          panggil aja "Naghe", <br />
+          pemuda yang pengen cari jati dirinya,<br>haus akan ilmu dan pengalaman
+        </p>
+      </div>
+      <div>
+        <img src="" alt="" />
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <main>
+      <h1>My Skills</h1>
+      <p>Keahlianku</p>
+
+      <!-- Tempat skill -->
+      <div class="skills-section">
+        <div class="skill">
+          <div><img src="" alt="gambar lari" /></div>
+          <div>
+            <h2>Graphic Design</h2>
+            <p>Suka bikin poster untuk marketing,<br>Kemasan produk, dll</p>
+            <button>See More</button>
+          </div>
         </div>
-      </section>
+
+        <div class="skill-dua">
+          <div><img src="" alt="gambar pendaki" /></div>
+          <div>
+            <h2>Public Speaking</h2>
+            <p></p>
+            <button>See More</button>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div><img src="" alt="gambar lari" /></div>
+          <div>
+            <h2>Photography & Videography</h2>
+            <p></p>
+            <button>See More</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <div>
+          <h2>Alamat Rumah</h2>
+          <p>
+            Perumahan Eco Village Serpong, Mekar Sari, Kec. <br />Rumpin,
+            Kabupaten Bogor, Jawa Barat, 16350
+          </p>
+        </div>
+        <div>
+          <h2>Mau Ngobrol lebih <br>lanjut?</h2>
+          <p>+62 851 2390 0510 | nabighhabibie@gmail.com</p>
+        </div>
+        <div>
+          <h2>Link Media Sosialku</h2>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1280px-Facebook_f_logo_%282019%29.svg.png?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+            alt="fb"
+          />
+        </li>
+        <li>
+          <img
+            src="https://img.magnific.com/premium-vector/instagram-logo-vector_629132-1540.jpg?semt=ais_test_b&w=740&q=80"
+            alt="ig"
+          />
+        </li>
+        <li>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=original"
+            alt="yt"
+          />
+        </li>
+        <li>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFDursvQ3J-nb4PLsksf5VWgDOiGQ_speC3bvulTm-JbSjzt-GvakKvA4&s=10"
+            alt="tiktok"
+          />
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
