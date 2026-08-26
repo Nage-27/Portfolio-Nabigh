@@ -14,62 +14,72 @@
   <body>
     <!-- Bagian Header -->
     <header>
-        <a href="#" class="logo">Naghe.</a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <a href="javascript:void(0);" onclick="toogleMenu()" class="hamburger-icon">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
+      <a href="#" class="logo">Naghe.</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a
+          href="javascript:void(0);"
+          onclick="toogleMenu()"
+          class="hamburger-icon"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
 
-        <script>
-            const navlinks = document.querySelector('.nav-links');
+      <script>
+        const navlinks = document.querySelector(".nav-links");
 
-            function toogleMenu(){
-                if(navlinks.style.display === 'block') {
-                    navlinks.style.display = 'none';
-                } else{
-                    navlinks.style.display = 'block';
-                }
-            }
-        </script>
+        function toogleMenu() {
+          if (navlinks.style.display === "block") {
+            navlinks.style.display = "none";
+          } else {
+            navlinks.style.display = "block";
+          }
+        }
+      </script>
     </header>
 
     <!-- Bag hero -->
     <section>
       <div>
-        <p>Hello I'am Naghe</p>
+        <p>
+          Hello I'am
+          <span style="color: #121358; font-weight: bold">Naghe</span>
+        </p>
         <h1>An <span>Explorer</span> of new <br />experiences</h1>
         <p>
-          Someone who wants to become the best version <br>of themselves—not to
-          surpass others,<br />
+          Someone who wants to become the best version <br />of themselves—not
+          to surpass others,<br />
           but to learn to know themselves.
         </p>
-        <button>See More</button>
       </div>
-      <div>
-        <img src="/gambar/download (18).jpg" alt="" />
+      <div class="tombol">
+        <a href="#" class="tombol-dalem">View Projects &rarr;</a>
+        <a href="#" class="tombol-dalem-dua">Contact Me</a>
       </div>
     </section>
 
     <!-- Bag About -->
     <section class="about">
       <div>
+        <img src="/gambar/pria solo.png" alt="" />
+      </div>
+      <div>
         <h1>About Me</h1>
         <p>Tentangku</p>
         <p>
-          Kenalin nama asli & lengkapnya <span class="name">Nabigh Habibie Ghany</span> <br>cuman
-          panggil aja "Naghe", <br />
-          pemuda yang pengen cari jati dirinya,<br>haus akan ilmu dan pengalaman
+          Kenalin nama asli & lengkapnya
+          <span class="name">Nabigh Habibie Ghany</span> <br />cuman panggil aja <span class="named">
+          "Naghe"</span>, <br />
+          pemuda yang pengen cari jati dirinya,<br />haus akan ilmu dan
+          pengalaman.
         </p>
       </div>
-      <div>
-        <img src="" alt="" />
-      </div>
+      <button>See More</button>
     </section>
 
     <!-- Skill -->
@@ -80,33 +90,79 @@
       <!-- Tempat skill -->
       <div class="skills-section">
         <div class="skill">
-          <div><img src="" alt="gambar lari" /></div>
+          <div><img src="/gambar/jaringan.jpg" alt="gambar hard skills" /></div>
           <div>
-            <h2>Graphic Design</h2>
-            <p>Suka bikin poster untuk marketing,<br>Kemasan produk, dll</p>
+            <h2>Hard Skills</h2>
+            <ul>
+              <li>Desain Grafis</li>
+              <li>Videografi</li>
+              <li>Fotografi</li>
+            </ul>
             <button>See More</button>
           </div>
         </div>
 
         <div class="skill-dua">
-          <div><img src="" alt="gambar pendaki" /></div>
+          <div><img src="/gambar/hand.jpg" alt="gambar soft skills" /></div>
           <div>
-            <h2>Public Speaking</h2>
-            <p></p>
+            <h2>Soft Skills</h2>
+            <ul>
+              <li>Leadership</li>
+              <li>Kolaborasi</li>
+              <li>Kreativitas</li>
+            </ul>
             <button>See More</button>
           </div>
         </div>
 
         <div class="skill">
-          <div><img src="" alt="gambar lari" /></div>
           <div>
-            <h2>Photography & Videography</h2>
-            <p></p>
+            <img
+              src="/gambar/Web Development free icons designed by the best icon.jpg"
+              alt="gambar Software"
+            />
+          </div>
+          <div>
+            <h2>Software Skills</h2>
+            <ul>
+              <li>Figma</li>
+              <li>Canva</li>
+              <li>Capcut</li>
+            </ul>
             <button>See More</button>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- Contact -->
+     <section class="contact-me">
+      <div class="info">
+        <h2>ADA <span>PERTANYAAN?</span></h2>
+        <p>Ada yang mau ditanyain, konsultasi, diskusi, atau sekedar ngobrol? <br>Isi formnya, Ownernya Fast Respon!</p>
+      </div>
+
+      <form action="#" method="post" class="contact-form">
+        <div class="grup">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" name="nama" id="nama" required autocomplete="name">
+        </div>
+
+        <div class="grup">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" required autocomplete="email">
+        </div>
+
+        <div class="grup">
+          <label for="pesan">Pesan</label>
+          <textarea name="pesan" id="pesan" required></textarea>
+        </div>
+
+        <button type="submit" class="submit">
+          Kirim pesan &rarr;
+        </button>
+      </form>
+     </section>
 
     <!-- Footer -->
     <footer>
@@ -114,12 +170,12 @@
         <div>
           <h2>Alamat Rumah</h2>
           <p>
-            Perumahan Eco Village Serpong, Mekar Sari, Kec. <br />Rumpin,
-            Kabupaten Bogor, Jawa Barat, 16350
+            Jl. Griya Pinang Asri, RT.001/RW.005, Kenanga/Neroktog, Kec.
+            Cipondoh/Pinang,<br />Kota Tangerang, Banten 15145
           </p>
         </div>
         <div>
-          <h2>Mau Ngobrol lebih <br>lanjut?</h2>
+          <h2>Mau Ngobrol lebih <br />lanjut?</h2>
           <p>+62 851 2390 0510 | nabighhabibie@gmail.com</p>
         </div>
         <div>
@@ -148,6 +204,12 @@
         <li>
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFDursvQ3J-nb4PLsksf5VWgDOiGQ_speC3bvulTm-JbSjzt-GvakKvA4&s=10"
+            alt="tiktok"
+          />
+        </li>
+        <li>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png?utm_source=su.wikipedia.org&utm_campaign=index&utm_content=original"
             alt="tiktok"
           />
         </li>
