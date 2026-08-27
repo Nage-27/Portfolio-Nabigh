@@ -85,22 +85,39 @@ section p {
 }
 
 .tombol-dalem {
-  padding: 10px 40px;
-  background-color: #56b6c6;
+  position: relative;
+  padding: 10px 100px;
+  background-color: #34A99D;
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   font-weight: bold;
   border-radius: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .tombol-dalem-dua {
-  padding: 10px 40px;
+  position: relative;
+  padding: 10px 100px;
   border: 2px solid #56b6c6;
   text-decoration: none;
   color: black;
   font-weight: bold;
   border-radius: 10px;
   text-align: center;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efek hover tombol pada hero */
+.tombol-dalem:hover {
+  background-color: #ffffff;
+  border: 2px solid #34A99D;
+  color: black;
+}
+
+.tombol-dalem-dua:hover {
+  background-color: #56b6c6;
+  color: #ffffff;
+  object-fit: cover;
 }
 
 section img {
@@ -214,6 +231,39 @@ main {
 .skill-dua img {
   width: 60px;
   height: 60px;
+}
+
+/* Tools */
+.tools-sec {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.tools-sec p {
+  margin-bottom: 10px;
+}
+
+.tools {
+  flex-direction: column;
+  gap: 5px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 1px 10px black;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  max-width: 600px;
+  width: 50%;
+  margin: 0 auto;
+}
+.tools-img {
+  width: 150px;
+  height: 100px;
 }
 
 /* Kontak */
@@ -350,6 +400,20 @@ footer ul li img {
   }
   .nav-links li {
     margin: 0 10px;
+  }
+
+  .nav-links a {
+    color: #1a3263;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.5s ease, background-color 0.5s ease;
+  }
+
+  .nav-links a:hover {
+    background-color: #8A7650;
+    color: #fcecdd;
+    border-radius: 4px;
+    transform: translateY(-4px);
   }
 
   /* BAg. Skills */

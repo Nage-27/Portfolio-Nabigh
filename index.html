@@ -29,18 +29,6 @@
           <i class="fa fa-bars"></i>
         </a>
       </nav>
-
-      <script>
-        const navlinks = document.querySelector(".nav-links");
-
-        function toogleMenu() {
-          if (navlinks.style.display === "block") {
-            navlinks.style.display = "none";
-          } else {
-            navlinks.style.display = "block";
-          }
-        }
-      </script>
     </header>
 
     <!-- Bag hero -->
@@ -59,7 +47,7 @@
       </div>
       <div class="tombol">
         <a href="#" class="tombol-dalem">View Projects &rarr;</a>
-        <a href="#" class="tombol-dalem-dua">Contact Me</a>
+        <a href="#" class="tombol-dalem-dua">Contact Me &rarr;</a>
       </div>
     </section>
 
@@ -73,8 +61,8 @@
         <p>Tentangku</p>
         <p>
           Kenalin nama asli & lengkapnya
-          <span class="name">Nabigh Habibie Ghany</span> <br />cuman panggil aja <span class="named">
-          "Naghe"</span>, <br />
+          <span class="name">Nabigh Habibie Ghany</span> <br />cuman panggil aja
+          <span class="named"> "Naghe"</span>, <br />
           pemuda yang pengen cari jati dirinya,<br />haus akan ilmu dan
           pengalaman.
         </p>
@@ -128,6 +116,7 @@
               <li>Figma</li>
               <li>Canva</li>
               <li>Capcut</li>
+              <li>VScode</li>
             </ul>
             <button>See More</button>
           </div>
@@ -135,22 +124,58 @@
       </div>
     </main>
 
+    <!-- My Tools -->
+    <main class="tools-sec">
+      <div>
+        <h1>My Tools</h1>
+        <p>Peralatan Yang Kupakai<br />untuk membuat portfolio</p>
+      </div>
+
+      <!-- Alat2 nya -->
+      <div class="tools">
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_1R7VNrsq33bLMrYxvnVoNzr31EKH-iHsqZwKInvkR4XtVfR_nRIkRxr&s=10"
+            alt="" class="tools-img"
+          />
+        </div>
+        <div>
+          <h1>Visual Studio Code</h1>
+        </div>
+      </div>
+    </main>
+
     <!-- Contact -->
-     <section class="contact-me">
+    <section class="contact-me">
       <div class="info">
         <h2>ADA <span>PERTANYAAN?</span></h2>
-        <p>Ada yang mau ditanyain, konsultasi, diskusi, atau sekedar ngobrol? <br>Isi formnya, Ownernya Fast Respon!</p>
+        <p>
+          Ada yang mau ditanyain, konsultasi, diskusi, atau sekedar ngobrol?
+          <br />Isi formnya, Ownernya Fast Respon!
+        </p>
       </div>
 
       <form action="#" method="post" class="contact-form">
         <div class="grup">
           <label for="nama">Nama Lengkap</label>
-          <input type="text" name="nama" id="nama" required autocomplete="name">
+          <input
+            type="text"
+            name="nama"
+            id="nama"
+            required
+            autocomplete="name"
+          />
         </div>
 
         <div class="grup">
           <label for="email">Email</label>
-          <input type="text" name="email" id="email" required autocomplete="email">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            required
+            autocomplete="email"
+          />
         </div>
 
         <div class="grup">
@@ -158,11 +183,9 @@
           <textarea name="pesan" id="pesan" required></textarea>
         </div>
 
-        <button type="submit" class="submit">
-          Kirim pesan &rarr;
-        </button>
+        <button type="submit" class="submit">Kirim pesan &rarr;</button>
       </form>
-     </section>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -215,5 +238,17 @@
         </li>
       </ul>
     </footer>
+
+    <script>
+      const navlinks = document.querySelector(".nav-links");
+
+      function toogleMenu() {
+        if (navlinks.style.display === "block") {
+          navlinks.style.display = "none";
+        } else {
+          navlinks.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
